@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+</head>
+
+<body>
+    <h1><u>Feedback Form</u></h1>
+
+    <form action="mailto:shivangmathur101@gmail.com" method="post" enctype="text/plain">
+        <section>
+            <table border="0" cellpadding="5">
+                <div>
+
+                </div>
+                <tr>
+                    <td>
+                        Name*
+                    </td>
+                    <td>
+                        <input type=" text " name=" Name " value="" placeholder="Enter your name" required minlength="4"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Enter your mail*
+                    </td>
+                    <td>
+
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            Select your D.O.B</label>
+                    </td>
+                    <td>
+                        <input type="date" name=" Birth date " value="" min=" 1995-01-01 " max=" 2005-01-01 ">
+                    </td>
+                </tr>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <p> <strong> Select your gender</strong></p>
+            <input type="radio" name=" gender " value=" Male ">Male <br>
+            <input type="radio" name=" gender " value=" Female ">Female <br>
+            <input type="radio" name=" gender " value=" Dont want to specify ">Don't want to Specify
+        </section>
+
+        <section>
+            <strong>
+                <h3> Write a Review*</h3>
+            </strong>
+
+            <textarea name="Review" id="" cols="70" rows="10" placeholder="Write a short Review here" required minlength="20"></textarea>
+        </section>
+
+        <section>
+            <div>
+                <h2> Payment Information (Optional)</h2>
+            </div>
+            <div>
+                <strong>
+                    Select a Payment Method
+                </strong> <select name="card_type" id="">
+                    <option value="Credit_Card">--Select a method--</option>
+                    <option value="Credit_Card">Credit Card</option>
+                    <option value="Debit_Card">Debit Card</option>
+                    <option value="VISA">PayPal</option>
+                </select>
+            </div>
+            <div>
+                <p>
+                    Card Number <input type="text" name="card_number" placeholder="XXXX-XXXX-XXXX" value="" maxlength="12">
+                </p>
+            </div>
+            <div>
+                <p>
+                    CVV <input type="password" name="CVV" maxlength="3" placeholder="CVV">
+                </p>
+            </div>
+        </section>
+
+        <input type="reset" valu="Reset" onclick="alert('Your Form Has Been Reset to Default')">
+        <input type="submit" value="Submit Now">
+
+        <hr size=4 color="black">
+    </form>
+
+
+</body>
+
+</html>
